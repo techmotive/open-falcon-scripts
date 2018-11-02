@@ -6,7 +6,7 @@ CREATE TRIGGER trigger_update_host
 
 AFTER INSERT
 
-ON graph.endpoint_counter FOR EACH ROW
+ON graph.endpoint FOR EACH ROW
 
 BEGIN
 
