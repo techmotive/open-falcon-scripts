@@ -1,0 +1,1 @@
+mysql -uroot -p123456 -e 'use auto_aggr;truncate table auto_aggr.endpoint; insert into  auto_aggr.endpoint (select * from graph.endpoint where endpoint like "%server_%" and endpoint not like "%error-endpoint%" );'
